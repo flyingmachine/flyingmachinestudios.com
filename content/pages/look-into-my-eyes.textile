@@ -1,6 +1,6 @@
 date: Jan 10 11:46:00 -0500 2010
 summary: My first attempt to give myself super powers merely gave me sore palms. Riding in the back of my mother's beater as a five-year-old, I focused sunlight on the center of each hand using a magnifying glass likely found in a cereal box. After I was "charged up" I would point at trees, cars, fire hydrants, and other hapless objects and think to myself, "In five years, that thing's going to burst into flames."
-
+categories: essays
 
 h1. Look Into My Eyes
 

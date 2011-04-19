@@ -13,13 +13,6 @@ module Nesta
     end
 
     helpers do
-      def set_common_variables
-        @menu_items = Nesta::Menu.for_path('/')
-        @site_title = Nesta::Config.title
-        set_from_config(:title, :subtitle, :google_analytics_code)
-        @heading = @title
-        @recent_articles = Page.find_articles[0..7]
-      end
     end
 
     get "/css/:sheet.css" do

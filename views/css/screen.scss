@@ -171,6 +171,7 @@ ol.pages {
     margin-bottom:($base-line-height - 1px);
     font-variant:small-caps;
     text-transform:none;
+    @include adjust-font-size-to(18px);
   }
   
   h3 {

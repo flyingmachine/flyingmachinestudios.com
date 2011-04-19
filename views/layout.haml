@@ -1,0 +1,29 @@
+!!!
+%html{ :lang => "en", "xml:lang" => "en", :xmlns => 'http://www.w3.org/1999/xhtml' }
+  %head
+    %meta{ "http-equiv" => "content-type", "content" => "text/html; charset=utf-8" }
+    - if @description
+      %meta{ "name" => "description", "content" => @description }
+    - if @keywords
+      %meta{ "name" => "keywords", "content" => @keywords }
+    %title= @title
+    %link{ :href => "/css/screen.css", :media => "screen", :rel => "stylesheet", :type => "text/css" }
+    - if @page
+      - @page.additional_stylesheets.each do |ss|
+        %link{ :href => "/css/#{ss}.css", :media => "screen", :rel => "stylesheet", :type => "text/css" }
+    - if local_stylesheet?
+      %link{ :href => "/css/local.css", :media => "screen", :rel => "stylesheet", :type => "text/css" }
+    %link{ :href => "/articles.xml", :rel => "alternate", :type => "application/atom+xml" }
+    = haml :analytics, :layout => false
+  %body{ :class => @body_class }
+    #document
+      #main
+        #header
+          .title
+            %a{:href => "/"}= @heading
+          .utilities about contact
+        = yield
+        = haml :footer, :layout => false
+    %script{ :src => "http://ajax.microsoft.com/ajax/jquery/jquery-1.4.4.min.js" }
+    %script{ :src => "/javascripts/jquery.hotkeys.js" }
+    %script{ :src => "/javascripts/application.js" }

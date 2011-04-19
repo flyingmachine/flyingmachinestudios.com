@@ -11,7 +11,7 @@ By default, it creates an HTML graph and saves it to RAILS_ROOT/ruby-prof/profil
 
 The method url_path is a convenience method for saving your HTML graph to a location based on the URL used.
 
-To use, add the below to lib , then add "around_filter RubyProfHelper" to whatever controllers you want to profile. Then go to the URL you want to profile and add profile=true to the query string. You should probably ensure that this can't be run by any schmoe in production. Also, you'll probably want to have your SCM ignore the ruby-prof directory.
+To use, add the below to lib , then add @around_filter RubyProfHelper@ to whatever controllers you want to profile. Then go to the URL you want to profile and add profile=true to the query string. You should probably ensure that this can't be run by any schmoe in production. Also, you'll probably want to have your SCM ignore the ruby-prof directory.
 
 If you want to get more fine grained with your filter, use the following:
 

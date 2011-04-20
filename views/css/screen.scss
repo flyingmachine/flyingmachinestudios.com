@@ -44,12 +44,6 @@ body {
   border-style: solid none;
   color:white;
   margin:0 (-2 * $gutter-width) ($base-line-height * 2 - 4);
-}
-
-.title {
-  @include adjust-font-size-to(20px);
-  letter-spacing:0.15em;
-  float:left;
   
   a {
     color:white;
@@ -63,6 +57,12 @@ body {
   }
 }
 
+.title {
+  @include adjust-font-size-to(20px);
+  letter-spacing:0.15em;
+  float:left;
+}
+
 .utilities {
   font-size:100%;
   float:right;
@@ -73,6 +73,7 @@ hr {
   border:0;
   border-top:1px solid #555;
   width:(12 * $gutter-width);
+  @include trailer(1);
 }
 
 h1 {

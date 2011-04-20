@@ -21,7 +21,8 @@
         #header
           .title
             %a{:href => "/"}= @heading
-          .utilities about contact
+          .utilities
+            %a{:href => "/about"} about
         = yield
         = haml :footer, :layout => false
     %script{ :src => "http://ajax.microsoft.com/ajax/jquery/jquery-1.4.4.min.js" }

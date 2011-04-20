@@ -71,4 +71,4 @@ h2. Rule Application Summarized
 
 h2. Pronunciation
 
-It's pronounced like "Haml", except with a short "i" instead of an "a". The "g" is silent.
+It's pronounced like "hig-uh-mole".

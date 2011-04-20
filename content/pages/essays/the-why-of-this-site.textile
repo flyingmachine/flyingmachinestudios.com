@@ -1,5 +1,6 @@
 date: Dec 01 22:35:00 -0500 2009
 summary: I&apos;m a young software developer and caregiver. This web site is about my experimentations in creating and following a system for constant personal growth. This article gives some background on the circumstances that motivated me to start those experimentations and this site.
+categories: essays
 
 h1. The Why of this Site
 

@@ -8,10 +8,18 @@ GEM
       haml (>= 3.0.4)
     compass-susy-plugin (0.8.1)
       compass (>= 0.10.0)
+    configuration (1.2.0)
     haml (3.0.25)
+    heroku (1.20.1)
+      launchy (~> 0.3.2)
+      rest-client (>= 1.4.0, < 1.7.0)
+    launchy (0.3.7)
+      configuration (>= 0.0.5)
+      rake (>= 0.8.1)
     linecache (0.43)
     maruku (0.6.0)
       syntax (>= 1.0.0)
+    mime-types (1.16)
     nesta (0.9.4)
       RedCloth (~> 4.2)
       haml (~> 3.0)
@@ -19,6 +27,9 @@ GEM
       shotgun (>= 0.8)
       sinatra (= 1.1.2)
     rack (1.2.2)
+    rake (0.8.7)
+    rest-client (1.6.1)
+      mime-types (>= 1.16)
     ruby-debug (0.10.4)
       columnize (>= 0.1)
       ruby-debug-base (~> 0.10.4.0)
@@ -39,5 +50,6 @@ DEPENDENCIES
   coderay
   compass
   compass-susy-plugin
+  heroku
   nesta (= 0.9.4)
   ruby-debug

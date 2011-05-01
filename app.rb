@@ -13,6 +13,13 @@ module Nesta
     end
 
     helpers do
+      def article_summaries(articles)
+        haml(
+          :summaries,
+          :layout => false,
+          :locals => { :pages => articles }
+        )
+      end
     end
 
     get "/css/:sheet.css" do

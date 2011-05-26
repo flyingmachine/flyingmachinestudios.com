@@ -17,9 +17,7 @@ body {
 
 #document {
   @include container;
-  border-left:(2 * $gutter-width) solid #333;
   background: $background;
-  @include box-shadow(#000, 0, 0, 20px, 1px);
   @include border-radius(0 0 20px);
   margin-bottom:(2 * $base-line-height);
   
@@ -231,4 +229,8 @@ p, ol, ul {
     background:#fff;
     line-height:1px;
   }
+}
+
+.read_more {
+  margin-top:0;
 }

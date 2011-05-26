@@ -159,11 +159,7 @@ ol.pages {
   float:right;
 }
 
-#content.page {
-  a {
-    @include text-shadow();
-  }
-  
+#content.page {  
   h2 {
     border-bottom:1px solid $border;
 /*    margin-right:(5 * $gutter-width);*/
@@ -232,5 +228,5 @@ p, ol, ul {
 }
 
 .read_more {
-  margin-top:0;
+  margin-top:-1.5em;
 }

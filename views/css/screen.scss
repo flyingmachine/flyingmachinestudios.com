@@ -12,7 +12,7 @@
 // change '.container' to match your HTML container element
 // or @extend it to apply multiple containers on your site.
 body {
-  background:$dark;
+  background:url("../images/ui/light_honeycomb.png");
 }
 
 #document {
@@ -38,8 +38,6 @@ body {
   @include clearfix;
   background:$highlight;
   padding:(0.5 * $base-line-height) $gutter-width;
-  border:2px solid $base;
-  border-style: solid none;
   color:white;
   margin:0 (-2 * $gutter-width) ($base-line-height * 2 - 4);
   
